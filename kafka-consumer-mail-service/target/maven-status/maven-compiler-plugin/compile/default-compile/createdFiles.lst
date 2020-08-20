@@ -1,0 +1,4 @@
+com\mindtree\consumer\dto\MessageDto.class
+com\mindtree\consumer\listener\KafkaConsumer.class
+com\mindtree\consumer\config\KafkaConsumerConfig.class
+com\mindtree\consumer\KafkaConsumerMailServiceApplication.class

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.mindtree.consumer.KafkaConsumerMailServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.898 s - in com.mindtree.consumer.KafkaConsumerMailServiceApplicationTests
