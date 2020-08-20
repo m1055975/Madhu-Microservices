@@ -1,0 +1,4 @@
+server:
+    waitTimeInMsWhenSyncEmpty: 0
+    renewal-percent-threshold: "0.49"
+ 
