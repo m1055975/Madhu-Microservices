@@ -1,0 +1,272 @@
+"2020-05-18 10:59:51 INFO  c.m.o.c.OrderControllerTest - No active profile set, falling back to default profiles: default
+""2020-05-18 10:59:51 DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@23c388c2
+""2020-05-18 10:59:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2020-05-18 10:59:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 333ms. Found 3 JPA repository interfaces.
+""2020-05-18 10:59:54 WARN  o.s.b.a.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+""2020-05-18 10:59:54 WARN  o.s.b.a.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+""2020-05-18 10:59:54 INFO  o.s.c.context.scope.GenericScope - BeanFactory id=8d907d0e-f3a7-3bc8-9721-d0c8f73cabac
+""2020-05-18 10:59:55 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mindtree.orderservice.proxy.SearchServiceFeignProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2020-05-18 10:59:55 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mindtree.orderservice.proxy.UserServiceFeignProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2020-05-18 10:59:57 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2020-05-18 10:59:57 WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+""2020-05-18 11:00:01 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2020-05-18 11:00:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2020-05-18 11:00:06 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2020-05-18 11:00:07 WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+""2020-05-18 11:00:07 INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2020-05-18 11:00:07 INFO  c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7bdf94f2
+""2020-05-18 11:00:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+""2020-05-18 11:00:10 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+""2020-05-18 11:00:11 INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""2020-05-18 11:00:11 WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+""2020-05-18 11:00:11 INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2020-05-18 11:00:11 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+""2020-05-18 11:00:11 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2020-05-18 11:00:12 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2020-05-18 11:00:12 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+""2020-05-18 11:00:13 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+""2020-05-18 11:00:14 INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [http://localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+""2020-05-18 11:00:14 INFO  o.a.k.common.utils.AppInfoParser - Kafka version: 2.3.1
+""2020-05-18 11:00:14 INFO  o.a.k.common.utils.AppInfoParser - Kafka commitId: 18a913733fb71c01
+""2020-05-18 11:00:14 INFO  o.a.k.common.utils.AppInfoParser - Kafka startTimeMs: 1589779814242
+""2020-05-18 11:00:14 INFO  o.a.k.c.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=group_id] Subscribed to topic(s): order
+""2020-05-18 11:00:14 INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+""2020-05-18 11:00:14 INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2020-05-18 11:00:14 INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+""2020-05-18 11:00:14 INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2020-05-18 11:00:14 INFO  c.m.o.c.OrderControllerTest - Started OrderControllerTest in 26.487 seconds (JVM running for 28.378)
+""2020-05-18 11:00:15 INFO  c.m.o.controller.OrderController - Inside Method: processing payment:
+
+""2020-05-18 11:00:15 INFO  c.m.o.controller.OrderController - Inside Method: placing Order:
+
+""2020-05-18 11:00:15 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mindtree.orderservice.OrderManagementServiceApplicationTests], using SpringBootContextLoader
+""2020-05-18 11:00:15 INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mindtree.orderservice.OrderManagementServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2020-05-18 11:00:15 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mindtree.orderservice.OrderManagementServiceApplicationTests]: OrderManagementServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+""2020-05-18 11:00:15 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mindtree.orderservice.OrderManagementServiceApplication for test class com.mindtree.orderservice.OrderManagementServiceApplicationTests
+""2020-05-18 11:00:15 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+""2020-05-18 11:00:15 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@73ba3c4b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@304933cb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7a4199e5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6fe55fcf, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d1f6e1c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3431cb1f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@42c9f2cd, org.springframework.test.context.event.EventPublishingTestExecutionListener@797c67c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@31ce271c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@b1d7b09, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@64faf3d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3f523dae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7fe40b9f]
+""2020-05-18 11:00:15 DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@23c388c2, started on Mon May 18 10:59:51 IST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5b068087
+""2020-05-18 11:00:15 INFO  o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+""2020-05-18 11:00:15 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ORDER-MANAGEMENT-SERVICE with eureka with status DOWN
+""2020-05-18 11:00:15 INFO  o.a.k.c.consumer.KafkaConsumer - [Consumer clientId=consumer-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+""2020-05-18 11:00:15 INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService
+""2020-05-18 11:00:15 INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - group_id: Consumer stopped
+""2020-05-18 11:00:15 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+""2020-05-18 11:00:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2020-05-18 11:00:15 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2020-05-18 11:00:15 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2020-05-18 11:12:16 INFO  c.m.o.c.OrderControllerTest - No active profile set, falling back to default profiles: default
+""2020-05-18 11:12:16 DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@23c388c2
+""2020-05-18 11:12:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2020-05-18 11:12:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 435ms. Found 3 JPA repository interfaces.
+""2020-05-18 11:12:18 WARN  o.s.b.a.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+""2020-05-18 11:12:19 WARN  o.s.b.a.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+""2020-05-18 11:12:19 INFO  o.s.c.context.scope.GenericScope - BeanFactory id=5b37dd21-8684-3c53-a4dc-49bc7dedf839
+""2020-05-18 11:12:19 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mindtree.orderservice.proxy.SearchServiceFeignProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2020-05-18 11:12:19 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mindtree.orderservice.proxy.UserServiceFeignProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2020-05-18 11:12:21 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2020-05-18 11:12:21 WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+""2020-05-18 11:12:27 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2020-05-18 11:12:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2020-05-18 11:12:30 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2020-05-18 11:12:30 WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+""2020-05-18 11:12:30 INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2020-05-18 11:12:30 INFO  c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@b548f51
+""2020-05-18 11:12:32 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+""2020-05-18 11:12:34 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+""2020-05-18 11:12:34 INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""2020-05-18 11:12:34 WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+""2020-05-18 11:12:34 INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2020-05-18 11:12:35 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+""2020-05-18 11:12:35 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2020-05-18 11:12:35 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2020-05-18 11:12:35 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+""2020-05-18 11:12:37 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+""2020-05-18 11:12:37 INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2020-05-18 11:12:37 INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+""2020-05-18 11:12:37 INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2020-05-18 11:12:38 INFO  c.m.o.c.OrderControllerTest - Started OrderControllerTest in 25.105 seconds (JVM running for 26.783)
+""2020-05-18 11:12:38 INFO  c.m.o.controller.OrderController - Inside Method: processing payment:
+
+""2020-05-18 11:12:38 INFO  c.m.o.controller.OrderController - Inside Method: placing Order:
+
+""2020-05-18 11:12:38 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mindtree.orderservice.OrderManagementServiceApplicationTests], using SpringBootContextLoader
+""2020-05-18 11:12:38 INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mindtree.orderservice.OrderManagementServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2020-05-18 11:12:38 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mindtree.orderservice.OrderManagementServiceApplicationTests]: OrderManagementServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+""2020-05-18 11:12:38 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mindtree.orderservice.OrderManagementServiceApplication for test class com.mindtree.orderservice.OrderManagementServiceApplicationTests
+""2020-05-18 11:12:38 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+""2020-05-18 11:12:38 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5f3bc119, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1b9cfc19, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@765d67dd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2e68bd3d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2fda92e0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@535adf36, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4ea4290f, org.springframework.test.context.event.EventPublishingTestExecutionListener@25cef4b3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5e783f78, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5bdef8ee, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@345d4ecb, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@66e44f9f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79f82fc4]
+""2020-05-18 11:12:38 DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@23c388c2, started on Mon May 18 11:12:16 IST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5b068087
+""2020-05-18 11:12:38 INFO  o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+""2020-05-18 11:12:38 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ORDER-MANAGEMENT-SERVICE with eureka with status DOWN
+""2020-05-18 11:12:38 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+""2020-05-18 11:12:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2020-05-18 11:12:38 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2020-05-18 11:12:40 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2020-05-18 11:16:25 INFO  c.m.o.c.OrderControllerTest - No active profile set, falling back to default profiles: default
+""2020-05-18 11:16:25 DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2d72f75e
+""2020-05-18 11:16:28 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2020-05-18 11:16:28 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 563ms. Found 3 JPA repository interfaces.
+""2020-05-18 11:16:29 WARN  o.s.b.a.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+""2020-05-18 11:16:29 WARN  o.s.b.a.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+""2020-05-18 11:16:29 INFO  o.s.c.context.scope.GenericScope - BeanFactory id=e454f995-0ba8-35cc-82f8-506893bfe3df
+""2020-05-18 11:16:30 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mindtree.orderservice.proxy.SearchServiceFeignProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2020-05-18 11:16:30 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mindtree.orderservice.proxy.UserServiceFeignProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2020-05-18 11:16:32 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2020-05-18 11:16:32 WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+""2020-05-18 11:16:40 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2020-05-18 11:16:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2020-05-18 11:16:44 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2020-05-18 11:16:45 WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+""2020-05-18 11:16:45 INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2020-05-18 11:16:45 INFO  c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1a914a00
+""2020-05-18 11:16:48 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+""2020-05-18 11:16:49 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+""2020-05-18 11:16:50 INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""2020-05-18 11:16:50 WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+""2020-05-18 11:16:50 INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2020-05-18 11:16:51 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+""2020-05-18 11:16:51 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2020-05-18 11:16:51 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2020-05-18 11:16:51 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+""2020-05-18 11:16:53 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+""2020-05-18 11:16:53 INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2020-05-18 11:16:53 INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+""2020-05-18 11:16:53 INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2020-05-18 11:16:53 INFO  c.m.o.c.OrderControllerTest - Started OrderControllerTest in 32.64 seconds (JVM running for 34.983)
+""2020-05-18 11:16:54 INFO  c.m.o.controller.OrderController - Inside Method: processing payment:
+
+""2020-05-18 11:16:54 INFO  c.m.o.controller.OrderController - Inside Method: placing Order:
+
+""2020-05-18 11:16:54 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mindtree.orderservice.OrderManagementServiceApplicationTests], using SpringBootContextLoader
+""2020-05-18 11:16:54 INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mindtree.orderservice.OrderManagementServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2020-05-18 11:16:54 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mindtree.orderservice.OrderManagementServiceApplicationTests]: OrderManagementServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+""2020-05-18 11:16:54 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mindtree.orderservice.OrderManagementServiceApplication for test class com.mindtree.orderservice.OrderManagementServiceApplicationTests
+""2020-05-18 11:16:54 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+""2020-05-18 11:16:54 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2a3c3a04, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@78ca8258, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4628f386, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@38224635, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7385a72f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5ff12345, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5e445ffe, org.springframework.test.context.event.EventPublishingTestExecutionListener@74fda9ed, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2a9fd482, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7ca2319f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@653a5a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@19ce597a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4d21b505]
+""2020-05-18 11:16:54 DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@2d72f75e, started on Mon May 18 11:16:25 IST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@19648c40
+""2020-05-18 11:16:54 INFO  o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+""2020-05-18 11:16:54 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ORDER-MANAGEMENT-SERVICE with eureka with status DOWN
+""2020-05-18 11:16:54 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+""2020-05-18 11:16:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2020-05-18 11:16:54 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2020-05-18 11:16:57 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2020-05-18 15:01:43 INFO  c.m.o.c.OrderControllerTest - No active profile set, falling back to default profiles: default
+""2020-05-18 15:01:43 DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2d72f75e
+""2020-05-18 15:01:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2020-05-18 15:01:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 269ms. Found 3 JPA repository interfaces.
+""2020-05-18 15:01:45 WARN  o.s.b.a.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+""2020-05-18 15:01:45 WARN  o.s.b.a.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+""2020-05-18 15:01:45 INFO  o.s.c.context.scope.GenericScope - BeanFactory id=e454f995-0ba8-35cc-82f8-506893bfe3df
+""2020-05-18 15:01:45 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mindtree.orderservice.proxy.SearchServiceFeignProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2020-05-18 15:01:45 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mindtree.orderservice.proxy.UserServiceFeignProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2020-05-18 15:01:47 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2020-05-18 15:01:47 WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+""2020-05-18 15:01:52 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2020-05-18 15:01:55 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2020-05-18 15:01:55 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2020-05-18 15:01:55 WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+""2020-05-18 15:01:55 INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2020-05-18 15:01:55 INFO  c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1d67348a
+""2020-05-18 15:01:57 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+""2020-05-18 15:01:58 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+""2020-05-18 15:01:58 INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""2020-05-18 15:01:58 WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+""2020-05-18 15:01:58 INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2020-05-18 15:01:59 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+""2020-05-18 15:01:59 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2020-05-18 15:01:59 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2020-05-18 15:01:59 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+""2020-05-18 15:02:01 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+""2020-05-18 15:02:01 INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2020-05-18 15:02:01 INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+""2020-05-18 15:02:01 INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2020-05-18 15:02:01 INFO  c.m.o.c.OrderControllerTest - Started OrderControllerTest in 20.334 seconds (JVM running for 21.304)
+""2020-05-18 15:02:01 INFO  c.m.o.controller.OrderController - Inside Method: processing payment:
+
+""2020-05-18 15:02:01 INFO  c.m.o.controller.OrderController - Inside Method: placing Order:
+
+""2020-05-18 15:02:01 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mindtree.orderservice.OrderManagementServiceApplicationTests], using SpringBootContextLoader
+""2020-05-18 15:02:02 INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mindtree.orderservice.OrderManagementServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2020-05-18 15:02:02 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mindtree.orderservice.OrderManagementServiceApplicationTests]: OrderManagementServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+""2020-05-18 15:02:02 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mindtree.orderservice.OrderManagementServiceApplication for test class com.mindtree.orderservice.OrderManagementServiceApplicationTests
+""2020-05-18 15:02:02 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+""2020-05-18 15:02:02 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1798c749, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@726ee6cf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4a83d61c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@624268ab, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33315925, org.springframework.test.context.transaction.TransactionalTestExecutionListener@366c9912, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@628b9af5, org.springframework.test.context.event.EventPublishingTestExecutionListener@137db13f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2a3c3a04, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@78ca8258, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4628f386, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@38224635, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7385a72f]
+""2020-05-18 15:02:02 DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@2d72f75e, started on Mon May 18 15:01:43 IST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@19648c40
+""2020-05-18 15:02:02 INFO  o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+""2020-05-18 15:02:02 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ORDER-MANAGEMENT-SERVICE with eureka with status DOWN
+""2020-05-18 15:02:02 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+""2020-05-18 15:02:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2020-05-18 15:02:02 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2020-05-18 15:02:04 INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+"
